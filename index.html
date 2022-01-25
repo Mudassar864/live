@@ -22,7 +22,7 @@
                 <div class="page__background"></div>
                 <div class="header">
                     <div class="container header__container"><a href="index.html" class="header__logo header-nav__link"
-                            style="text-transform: uppercase;"><span>pupsymarketing</span></a>
+                            style="text-transform: uppercase;"><span>skeleton</span></a>
                         <div class="header-nav header__nav"><a href="index.html" aria-current="page"
                                 class="header-nav__link active"><img
                                     src="https://whalies.club/assets/images/header/home-icon.png"
@@ -836,9 +836,14 @@
     </script>
     <script>
         var tree= document.querySelector("#aboutus");
-        var palmtree= document.getElementsByClassName(".palm-left");
-        palmtree.onclick = () => {
-            console.log("click");
+        var burgermenu= document.querySelector(".burgermenu");
+        var menu= document.querySelector(".menu");
+        var menu__close= document.querySelector(".menu__close");
+        burgermenu.onclick = () => {
+            menu.classList.toggle("opened");
+        }
+        menu__close.onclick = () => {
+            menu.classList.remove("opened");
         }
         window.onscroll = () =>{
             
